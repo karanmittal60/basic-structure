@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Routers, Route, Switch} from  'react-router-dom';
+import routesData from "./routes/RoutesData";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+          <Routers>
+              <Switch>
+                  {
+                      routesData.map((route, index) => {
+                          return (<Route key={index} {...route} />)
+                      })
+                  }
+              </Switch>
+          </Routers>
+          <div className="row">
+              <div className="col-6">
+                  <h1>hello</h1>
+              </div>
+              <div className="col-6">
+                  <h1>world</h1>
+              </div>
+          </div>
+      </div>
   );
 }
 
