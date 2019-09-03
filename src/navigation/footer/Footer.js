@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import Style from './Footer.module.css'
 
 class Footer extends Component {
     render() {
         return (
-            <div>
-                <h1>Footer</h1>
+            <div className={Style.footer}>
+                <span>Copyright © 2019 by Karan Mittal </span>
             </div>
         );
     }

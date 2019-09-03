@@ -5,26 +5,52 @@ const routesData = [
 
     {
         path: routeRules.signIn,
-        component: loadable(() => import('../container/signIn/SignIn'))
+        component: loadable(() => import('../container/signIn/SignIn')),
+        auth: false
     },
     {
         path: routeRules.signUp,
-        component: loadable(() => import('../container/signUp/SignUp'))
+        component: loadable(() => import('../container/signUp/SignUp')),
+        auth: false
     },
     {
         path: routeRules.forgotPassword,
-        component: loadable(() => import('../container/forgotPassword/ForgotPassword'))
+        component: loadable(() => import('../container/forgotPassword/ForgotPassword')),
+        auth: false
     },
     {
         path: routeRules.resetPassword,
-        component: loadable(() => import('../container/resetPassword/ResetPassword'))
+        component: loadable(() => import('../container/resetPassword/ResetPassword')),
+        auth: false
     },
     {
         path: routeRules.dashboard,
-        component: loadable(() => import('../container/dashboard/Dashboard'))
+        component: loadable(() => import('../container/dashboard/Dashboard')),
+        auth: true
     },
     {
-        component: loadable(() => import('../components/NotFound'))
+        path: routeRules.home,
+        component: loadable(() => import('../container/pages/home/Home')),
+        auth: true
+    },
+    {
+        path: routeRules.aboutUs,
+        component: loadable(() => import('../container/pages/about/About')),
+        auth: true
+    },
+    {
+        path: routeRules.contactUs,
+        component: loadable(() => import('../container/pages/contact/Contact')),
+        auth: true
+    },
+    {
+        path: routeRules.projects,
+        component: loadable(() => import('../container/pages/projects/Projects')),
+        auth: true
+    },
+    {
+        component: loadable(() => import('../components/NotFound')),
+        auth: false
     },
 
 ];
