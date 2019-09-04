@@ -4,16 +4,18 @@ import DefaultLayout from "../layout/DefaultLayout";
 
 function  DefaultRoute ({component: Component, ...rest}){
     return (
+
         <Route
             {...rest}
-            return ={
-                (matchProps) => (
-                    <DefaultLayout>
+            render={matchProps => {
+                return (
+                    <DefaultLayout {...matchProps}>
                         <Component {...matchProps} />
                     </DefaultLayout>
-                )
-            }
+                );
+            }}
         />
+
     );
 }
 

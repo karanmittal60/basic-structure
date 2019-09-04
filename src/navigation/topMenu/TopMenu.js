@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Style from './TopMenu.module.css'
 import routeRules from "../../routes/RouteRules";
 
 class TopMenu extends Component {
@@ -19,7 +20,7 @@ class TopMenu extends Component {
     render() {
         let {toggleMenu} = this.state
         return (
-            <div>
+            <div className={Style.topMenu}>
                 <nav className="navbar navbar-expand-md bg-dark navbar-dark">
                     <span className="navbar-brand" onClick={() => {this.props.history.push(routeRules.dashboard)}}>Basic structure</span>
                     <button className="navbar-toggler" onClick={this.toggleMenu}>

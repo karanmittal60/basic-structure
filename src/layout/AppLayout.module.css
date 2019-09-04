@@ -1,3 +1,29 @@
-.appLayout{
-    padding: 50px 0px 50px 200px;
+.maincontainer{
+    padding: 50px 0px 50px 0px;
+    /*display: flex;*/
+    width: 100%;
+}
+
+
+.leftcontainer{
+    width: 100%;
+    background-color: #F9F9F9;
+    /* overflow: hidden; */
+    /*padding-top: 50px;*/
+    /*padding-bottom: 50px;*/
+}
+
+.contentcontainerOpen {
+    background-color: #F9F9F9;
+    font-family: Arial;
+    font-size: 16px;
+    /* margin-left: 255px; */
+    padding-left: 200px;
+}
+
+.contentcontainerClosed {
+    background-color: #F9F9F9;
+    font-family: Arial;
+    font-size: 16px;
+    margin:0px auto;
 }
