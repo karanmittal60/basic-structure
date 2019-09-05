@@ -19,6 +19,9 @@
     font-size: 16px;
     /* margin-left: 255px; */
     padding-left: 200px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 .contentcontainerClosed {
@@ -26,4 +29,7 @@
     font-family: Arial;
     font-size: 16px;
     margin:0px auto;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 }

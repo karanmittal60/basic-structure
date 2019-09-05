@@ -12,6 +12,16 @@ class LeftMenu extends Component {
                 {/*    <span>Clients</span>*/}
                 {/*    <span>Contact</span>*/}
                 {/*</div>*/}
+                <div>
+                    <ul>
+                        <li>hwllo</li>
+                        <li>hwllo</li>
+                        <li>hwllo</li>
+                        <li>hwllo</li>
+                        <li>hwllo</li>
+                        <li>hwllo</li>
+                    </ul>
+                </div>
             </div>
         );
     }
