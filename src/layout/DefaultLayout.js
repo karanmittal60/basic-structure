@@ -1,10 +1,10 @@
-import React, { Fragment} from 'react';
+import React from 'react';
 
 function  DefaultLayout ({children}){
         return (
-            <Fragment>
+            <div>
                 {children}
-            </Fragment>
+            </div>
         );
 }
 

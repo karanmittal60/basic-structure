@@ -7,13 +7,13 @@ import Style from './AppLayout.module.css'
 class AppLayout extends Component{
     state = {
         openLeftMenu: false
-    }
+    };
 
     openMenu = () => {
         this.setState({
             openLeftMenu: !this.state.openLeftMenu
         });
-    }
+    };
     render() {
         return (
             <Fragment>
