@@ -6,7 +6,7 @@ import Style from './AppLayout.module.css'
 
 class AppLayout extends Component{
     state = {
-        openLeftMenu: false
+        openLeftMenu: true
     };
 
     openMenu = () => {

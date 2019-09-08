@@ -1,24 +1,9 @@
 import {combineReducers} from "redux";
+import incrementReducer from "../container/dashboard/reducer";
 
 
-
-{
-    visibilityFilter: 'SHOW_ALL',
-        todos: [
-        {
-            text: 'Consider using Redux',
-            completed: true
-        },
-        {
-            text: 'Keep all state in a single tree',
-            completed: false
-        }
-    ]
-}
-
-
-const reducers =  combineReducers({
-
+const rootReducers =  combineReducers({
+    dashboardReducer: incrementReducer
 });
 
-export default reducers;
+export default rootReducers;

@@ -2,8 +2,8 @@ class Auth {
   constructor() {
     this.authenticated = true;
 
-    const userData = localStorage.getItem("user")
-    console.log("==useData==", userData)
+    // const userData = localStorage.getItem("user")
+    // console.log("==useData==", userData)
   }
 
   login(cb) {

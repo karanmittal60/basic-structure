@@ -7,14 +7,14 @@ class TopMenu extends Component {
     showMenu: false,
     }
     toggleMenu = () => {
-        console.log("==toggleMenu==");
+        // console.log("==toggleMenu==");
         this.setState({
             toggleMenu: !this.state.toggleMenu
         });
     };
 
     componentDidMount() {
-        console.log("==this.props==", this.props);
+        // console.log("==this.props==", this.props);
     }
 
     render() {

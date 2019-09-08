@@ -15,7 +15,6 @@ function Root() {
                     </Route>
                     {
                         routesData.map((route, index) => {
-                            console.log("==route==", route.auth);
                             if (route.auth) {
                                 return (<AppRoute key={index} {...route} />)
                             } else {
