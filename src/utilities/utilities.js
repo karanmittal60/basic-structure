@@ -11,3 +11,7 @@ const alphaNumOnly = event => {
         event.preventDefault();
     }
 };
+
+
+
+export {alphaNumOnly, alphaOnly};
