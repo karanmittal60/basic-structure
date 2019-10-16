@@ -16,7 +16,7 @@ function Page(props){
 
 let activeBg = {
   backgroundColor: "#005090"
-}
+};
 
 
 function Pagination(props){

@@ -49,7 +49,7 @@ const routesData = [
         auth: true
     },
     {
-        component: loadable(() => import('../components/NotFound')),
+        component: loadable(() => import('../components/notFound/index')),
         auth: false
     },
 
